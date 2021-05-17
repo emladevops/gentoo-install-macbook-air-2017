@@ -51,8 +51,14 @@ You need an USB with at least 500MB in order to create the installation media, d
 * Step 2: Press `w` to write the changes to disk
 * Step 3: Enter `cfdisk /dev/sda` to create the partition layout
 * Step 4: Partition like this (if you'd like to follow me):
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
 
+
+Disk type | Space
+--------- | -----
+EFI System and kernel | 500MB
+Swap space | 4GB
+System | amount of space left
+
+* Step 5: Write the changes and exit cfdisk
+
+### V/ Download the stage3 tarball (systemd)
