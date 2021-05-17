@@ -39,7 +39,7 @@ You need an USB with at least 500MB in order to create the installation media, d
 * Step 2: Run command ``` ls /sys/class/net``` to find out if the Ethernet is connected
 * Step 3: If it is recogized, run command ``` dhcpcd eth0 ``` to init the internet connection using DHCP
 
-### III/Connect to network (If you're using an Android Phone to share the Internet connection via the USB port)
+### III/ Connect to network (If you're using an Android Phone to share the Internet connection via the USB port)
 
 * Step 1: Connect the Android Phone to your Mac using the USB Cable first
 * Step 2: On your Android Phone, enable USB network sharing (for how to turn on, please search the internet)
@@ -47,4 +47,12 @@ You need an USB with at least 500MB in order to create the installation media, d
 * Step 4: Run command ``` dhcpcd enp0s20u1u1```  to init the connection to Internet via DHCP
 
 ### IV/ Begin the installation
-* Step 1: 
+* Step 1: Run command `` fdisk /dev/sda`` then type `g` to create the new GPT partition table
+* Step 2: Press `w` to write the changes to disk
+* Step 3: Enter `cfdisk /dev/sda` to create the partition layout
+* Step 4: Partition like this (if you'd like to follow me):
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
