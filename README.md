@@ -25,8 +25,26 @@ You need an USB with at least 500MB in order to create the installation media, d
 * Click on Flash
 * Enter your password to begin flashing
 
-### **II/ Boot from the installation media**
+### II/ Boot from the installation media**
 
-***** Step 1: Power off your Mac
+* Step 1: First of all, power off your Macbook
+* Step 2: Press the Power button to power your Mac on
+* Step 3: When you hear the boot chime, press and hold the Option key (Alt key)
+* Step 4: Choose the EFI Boot partition (yellow ext disk logo)
+* Step 5: Press enter twice to boot to Gentoo install media
 
+### III/ Connect to network (If you're using Thunderbolt to Ethernet adapter)
 
+* Step 1: Connect the adapter to your Mac (make sure the ethernet cable is connected)
+* Step 2: Run command ``` ls /sys/class/net``` to find out if the Ethernet is connected
+* Step 3: If it is recogized, run command ``` dhcpcd eth0 ``` to init the internet connection using DHCP
+
+### III/Connect to network (If you're using an Android Phone to share the Internet connection via the USB port)
+
+* Step 1: Connect the Android Phone to your Mac using the USB Cable first
+* Step 2: On your Android Phone, enable USB network sharing (for how to turn on, please search the internet)
+* Step 3: Run command ``` ls /sys/class/net``` to find out if the USB internet connection is recognized
+* Step 4: Run command ``` dhcpcd enp0s20u1u1```  to init the connection to Internet via DHCP
+
+### IV/ Begin the installation
+* Step 1: 
