@@ -142,14 +142,13 @@ Follow the instruction --> [here](https://wiki.gentoo.org/wiki/Handbook:AMD64/In
 * To install the Wifi card driver, I'm gonna use the broadcom-sta driver
 * Step 1: Run command `emerge -av net-wireless/broadcom-sta`
 * Step 2: Run these comamnd
-`# depmod –a
-# rmmod b43
-# rmmod ssb
-# rmmod wl
-# modprobe wl`
+`depmod –a
+rmmod b43
+rmmod ssb
+rmmod wl
+modprobe wl`
 * Step 3: Create the /etc/modprobe.d/blacklist.conf file containing:
-`
-blacklist b43
+`blacklist b43
 blacklist sbb
 `
 ### XV/ Unmount all volumes, boot the OS
