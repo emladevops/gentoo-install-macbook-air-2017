@@ -154,7 +154,7 @@ blacklist sbb
 ### XV/ Unmount all volumes, boot the OS
 * Step 1: Run command `exit`
 * Step 2: Run command `cd`
-* Step 3: Run command `umount -l /mnt/gentoo/dev{/shm,/pts,}
+* Step 3: Run command `umount -l /mnt/gentoo/dev{/shm,/pts,}`
 * Step 4: Run command `umount -R /mnt/gentoo`
 * Step 5: Run command `reboot`
 * Step 6: Leave your computer alone to boot, do not hold the <Option> key
